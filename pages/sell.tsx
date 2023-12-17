@@ -25,8 +25,8 @@ export default function Sell() {
       <h1>Sell Assets</h1>
       {!selectedNft ? (
         <>
-          <p>Select the assets that you&rsquo;d like to sell below. Your assets will be listed on the open marketplace and sold to the first purchaser 
-            that meets your price. You can also actuion your assets to the highest bidder and set a "buy now" price. Assets must be unstaked before they 
+          <p>Select the assets that you wand to sell below. Your assets will be listed on the open marketplace and sold to the first purchaser 
+            that meets your price. You can also actuion your assets to the highest bidder and set a buy now price. Assets must be unstaked before they 
             can be sold or auctioned. You can unstake & stake your assets from the Invest menu option.</p>
           <NFTGrid
             data={data}
@@ -59,7 +59,7 @@ export default function Sell() {
           </div>
 
           <div className={tokenPageStyles.listingContainer}>
-            <p>You&rsquo;re about to list the following item for sale.</p>
+            <p>You are about to list the following item for sale.</p>
             <h1 className={tokenPageStyles.title}>
               {selectedNft.metadata.name}
             </h1>
