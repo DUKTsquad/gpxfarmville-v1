@@ -1,15 +1,25 @@
 import type { AppProps } from "next/app";
-import { ThirdwebProvider } from "@thirdweb-dev/react";
+import { ThirdwebProvider, embeddedWallet, metamaskWallet, coinbaseWallet, smartWallet } from "@thirdweb-dev/react";
 import { Navbar } from "../components/Navbar/Navbar";
 import NextNProgress from "nextjs-progressbar";
 import { NETWORK } from "../const/contractAddresses";
 import "../styles/globals.css";
+import { ACCOUNT_FACTORY_ADDRESS } from "../const/contractAddresses";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const smartWalletConfig = {
+    factoryAddress: ACCOUNT_FACTORY_ADDRESS,
+    gasless: true,
+  }
   return (
     <ThirdwebProvider
       clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
       activeChain={NETWORK}
+      supportedWallets={[
+        smartWallet(embeddedWallet(), smartWalletConfig),
+        smartWallet(metamaskWallet(), smartWalletConfig),
+        smartWallet(coinbaseWallet(), smartWalletConfig),
+      ]}
     >
       {/* Progress bar when navigating between pages */}
       <NextNProgress

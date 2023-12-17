@@ -26,7 +26,7 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.heroAssetFrame}>
             <Image
-              src="/hero-asset.png"
+              src="/hero-asset1.png"
               width={860}
               height={540}
               alt="Hero asset, NFT marketplace"
@@ -56,15 +56,14 @@ const Home: NextPage = () => {
               </p>
 
               <div className={styles.heroCtaContainer}>
-                <Link className={styles.heroCta} href="/buy">
-                  Get Started
+                <Link className={styles.heroCta} href="/invest">
+                  Manage Assets
                 </Link>
                 <Link
                   className={styles.secondaryCta}
-                  href="https://github.com/thirdweb-example/marketplace-v3"
-                  target="_blank"
+                  href="/shop"
                 >
-                  GitHub
+                  Purchase Assets
                 </Link>
               </div>
             </div>

@@ -22,10 +22,12 @@ export default function Sell() {
 
   return (
     <Container maxWidth="lg">
-      <h1>Sell NFTs</h1>
+      <h1>Sell Assets</h1>
       {!selectedNft ? (
         <>
-          <p>Select which NFT you&rsquo;d like to sell below.</p>
+          <p>Select the assets that you&rsquo;d like to sell below. Your assets will be listed on the open marketplace and sold to the first purchaser 
+            that meets your price. You can also actuion your assets to the highest bidder and set a "buy now" price. Assets must be unstaked before they 
+            can be sold or auctioned. You can unstake & stake your assets from the Invest menu option.</p>
           <NFTGrid
             data={data}
             isLoading={isLoading}
