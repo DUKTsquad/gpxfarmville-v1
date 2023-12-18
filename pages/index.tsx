@@ -38,32 +38,31 @@ const Home: NextPage = () => {
             <div className={styles.heroBody}>
               <h1 className={styles.heroTitle}>
                 <span className={styles.heroTitleGradient}>
-                  Build NFT Marketplaces
+                  Build a farm business
                 </span>
                 <br />
-                faster than ever.
+                & earn daily rewards.
               </h1>
               <p className={styles.heroSubtitle}>
                 <Link
                   className={styles.link}
-                  href="https://thirdweb.com"
-                  target="_blank"
+                  href="/invest"
                 >
-                  thirdweb
+                  Farmville
                 </Link>{" "}
-                gives you the tools you need to create audited, performant, and
-                flexible NFT marketplaces in <b>hours</b>, <i>not months</i>.
+                gives you the tools you need to invest and build a successful farm.
+                Claim a farm, put your tools to work and start earning rewards <b>daily</b>, <i>not monthly</i>.
               </p>
 
               <div className={styles.heroCtaContainer}>
                 <Link className={styles.heroCta} href="/invest">
-                  Manage Assets
+                  Manage Farm
                 </Link>
                 <Link
                   className={styles.secondaryCta}
                   href="/shop"
                 >
-                  Purchase Assets
+                  Purchase Tools
                 </Link>
               </div>
             </div>

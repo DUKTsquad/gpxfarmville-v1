@@ -22,7 +22,7 @@ export default function Sell() {
 
   return (
     <Container maxWidth="lg">
-      <h1>Sell Assets</h1>
+      <h1>Sell Tools</h1>
       {!selectedNft ? (
         <>
           <p>Select the assets that you wand to sell below. Your assets will be listed on the open marketplace and sold to the first purchaser 

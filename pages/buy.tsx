@@ -11,9 +11,9 @@ export default function Buy() {
 
   return (
     <Container maxWidth="lg">
-      <h1>Buy Assets</h1>
-      <p>Browse assets listed for sell or action on the open marketplace. Exchanges are secured by smart contract to ensure fair swaps. Assets must 
-        be staked in order to earn rewards & only earn rewards while staked. You can stake your assets from the Invest menu option.</p>
+      <h1>Buy Tools</h1>
+      <p>Browse tools listed for sell or action on the open marketplace. Exchanges are secured by smart contracts to ensure fair swaps. Tools must 
+        be equipped in order to earn rewards & stop earning when unequipped. You can equip your tools from the farm menu option.</p>
       <NFTGrid
         data={data}
         isLoading={isLoading}

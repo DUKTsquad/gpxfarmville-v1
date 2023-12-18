@@ -30,7 +30,7 @@ const Home: NextPage = () => {
     return (
       <Container maxW={"1200px"}>
         <Flex direction={"column"} h={"100vh"} justifyContent={"center"} alignItems={"center"}>
-          <Heading my={"40px"}>Welcom to the SHYNZ Wealth Network</Heading>
+          <Heading my={"40px"}>Welcome to the Farmville</Heading>
           <ConnectWallet />
         </Flex>
       </Container>
@@ -59,8 +59,8 @@ const Home: NextPage = () => {
     <Container maxW={"1200px"} paddingTop={100}>
       <SimpleGrid columns={2} spacing={10}>
         <Card p={5}>
-          <Heading>Member Info</Heading>
-          <Text>Member Account</Text>
+          <Heading>Farmer Info</Heading>
+          <Text>Farmer</Text>
           <SimpleGrid columns={3} spacing={10}>
             <Box>
               {ownedFarmers?.map((nft) => (
@@ -76,7 +76,7 @@ const Home: NextPage = () => {
           </SimpleGrid>
         </Card>
         <Card p={5}>
-          <Heading>Reward Balance</Heading>
+          <Heading>Token Balance</Heading>
           <Text>Wallet Balance</Text>
           <SimpleGrid columns={3} spacing={10}>
             <Box>
@@ -92,7 +92,7 @@ const Home: NextPage = () => {
             </Box>
           </SimpleGrid>
           <Box>
-              <Text fontSize={"small"} fontWeight={"bold"}>$Token Balance:</Text>
+              <Text fontSize={"small"} fontWeight={"bold"}>$Seed Balance:</Text>
                 {rewardBalance && (
                     <p>{ethers.utils.formatUnits(rewardBalance, 18)}</p>
                   )}
@@ -100,8 +100,9 @@ const Home: NextPage = () => {
         </Card>
       </SimpleGrid>
       <Card p={5} my={10}>
-        <Heading mb={"30px"}>Unstaked Assets:</Heading>
-        <Text>The amount of asset shares in your account available for staking. This DOES NOT include currently staked assets.</Text>
+        <Heading mb={"30px"}>Unequiped Tools | Start Earning</Heading>
+        <Text>The amount of unequiped tools in your account available to use. This DOES NOT include tools currently in use. 
+          Tools must be put to use in order to earn $Seeds.</Text>
         <SimpleGrid columns={1} spacing={10}>
         <Skeleton isLoaded={!loadingOwnedTools}>
             <UnstakedShares
@@ -111,8 +112,9 @@ const Home: NextPage = () => {
         </SimpleGrid>
       </Card>
       <Card p={5} my={10}>
-        <Heading mb={"30px"}>Staked Assets:</Heading>
-        <Text>The amount of asset shares that is currently staked. This DOES NOT include your unstaked assets.</Text>
+        <Heading mb={"30px"}>Equipped Tools | Claim Rewards</Heading>
+        <Text>The amount of tools that are currently in use and earning rewards. This DOES NOT include your unequiped tools. 
+          You can claim your accured rewards or unequip your a tool.</Text>
         <SimpleGrid columns={3} spacing={10}>
             {equippedTools &&
               equippedTools [0].map((nft: BigNumber) => (

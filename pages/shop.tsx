@@ -18,9 +18,9 @@ export default function Shop()  {
                     <Button>Back</Button>
                 </Link>
             </Flex>
-            <Heading mt={"40px"}>Buy Asset Shares Direct</Heading>
-            <Text>Purchase Asset Shares with and stake your shares to start earning DUKs. You can purchase asset shares here directly or buy and trade them 
-                on the Wealth Exchange.</Text>
+            <Heading mt={"40px"}>Buy Farming Tools</Heading>
+            <Text>Purchase farming tools, put your assets to use on the farm and start earning rewards. You can purchase tools here directly <br />
+            or buy and trade them on the exchange.</Text>
             {!nfts ? (
                 <Flex h={"50vh"} justifyContent={"center"} alignItems={"center"}>
                     <Spinner />

@@ -35,11 +35,11 @@ export function UnstakedShares({ nft }: Props) {
     if(nft?.length === 0) {
         return (
             <Box>
-                <Text>No Shares.</Text>
+                <Text>No Tools.</Text>
                 <Link
                     href="/shop"
                 >
-                    <Button>Buy Shares</Button>
+                    <Button>Buy Tools</Button>
                 </Link>
             </Box>
         )
@@ -56,11 +56,11 @@ export function UnstakedShares({ nft }: Props) {
                         height="100px"
                         width="100px"
                     />
-                    <Text>UnStaked: {nft.quantityOwned}</Text>
+                    <Text>Unequipped: {nft.quantityOwned}</Text>
                     <Web3Button
                         contractAddress={STAKING_ADDRESS}
                         action={() => stakeNFT(nft.metadata.id)}
-                    >Stake Claim</Web3Button>
+                    >Equip Tool</Web3Button>
                     </Stack>
                 </Card>
             ))}
