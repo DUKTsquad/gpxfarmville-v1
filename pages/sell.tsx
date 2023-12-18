@@ -25,7 +25,11 @@ export default function Sell() {
       <h1>Sell Tools</h1>
       {!selectedNft ? (
         <>
+<<<<<<< HEAD
           <p>Select the assets that you wand to sell below. Your assets will be listed on the open marketplace and sold to the first purchaser 
+=======
+          <p>Select the assets that you&rsquo;d like to sell below. Your assets will be listed on the open marketplace and sold to the first purchaser 
+>>>>>>> d634165e87aeac4e2ea60f30b8482cd50f31af3b
             that meets your price. You can also actuion your assets to the highest bidder and set a buy now price. Assets must be unstaked before they 
             can be sold or auctioned. You can unstake & stake your assets from the Invest menu option.</p>
           <NFTGrid
