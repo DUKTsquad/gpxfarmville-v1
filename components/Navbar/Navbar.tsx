@@ -36,6 +36,9 @@ export function Navbar() {
             <Link href="/sell" className={styles.link}>
               Sell
             </Link>
+            <Link href="/stream" className={styles.link}>
+              Stream
+            </Link>
           </div>
         </div>
 

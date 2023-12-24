@@ -20,7 +20,7 @@ export const ETHERSCAN_URL = "https://polygonscan.com";
 
 // The address of you Account Factory Contract for Smart Wallet Setup.
 
-export const ACCOUNT_FACTORY_ADDRESS = "0x66bD8e5D7013B9f0E274a7b72018FD0207b6DB0C"
+export const ACCOUNT_FACTORY_ADDRESS = "0x67840a1d9994482a998ff020df13fdee17b509c7"
 
 
 // Wealth App smart contrct addresses.
@@ -32,3 +32,7 @@ export const TOOLS_ADDRESS = '0x8679275ef981C9F361867775C53a6b5AB1AC1714';
 export const REWARDS_ADDRESS = '0x2c4b725fDf3d606e5C4EDFEF1534Cc82a31bad2d';
 
 export const STAKING_ADDRESS = '0xF5891B7755A165ACb45444C0fB6b97B91e51A4E5';
+
+// Social Status smart contrct addresses.
+
+export const STATUS_CONTRACT_ADDRESS = '0xa9b60F81e127960013E6eD96861229E0217F3a43';
