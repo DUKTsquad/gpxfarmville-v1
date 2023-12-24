@@ -90,7 +90,7 @@ export default function UserStatus() {
                             placeholder="Enter your status"
                         />
                         <div className={styles.characterCountContainer}>
-                            <p className={characterDecoration}>{characterCount}/140</p>
+                            <p className={characterDecoration}>{characterCount}/280</p>
                         </div>
                         <Web3Button
                             className={styles.statusModalButton}
@@ -99,7 +99,7 @@ export default function UserStatus() {
                                 "setStatus",
                                 [newStatus]
                             )}
-                            isDisabled={characterCount === 0 || characterCount > 140}
+                            isDisabled={characterCount === 0 || characterCount > 280}
                             onSuccess={() => {
                                 setIsStatusModalOpen(false);
                                 setNewStatus("");
