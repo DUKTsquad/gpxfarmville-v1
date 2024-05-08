@@ -41,7 +41,7 @@ const Home: NextPage = () => {
                   Stake DezNFTz
                 </span>
                 <br />
-                Earn Daily Rewards!
+                Earn Daily Rewards! 
               </h1>
               <p className={styles.heroSubtitle}>
                 Buy NFTs with -
