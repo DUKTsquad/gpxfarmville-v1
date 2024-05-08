@@ -56,6 +56,9 @@ const Home: NextPage = () => {
               </p>
 
               <div className={styles.heroCtaContainer}>
+                <Link className={styles.heroCta} href="/mint">
+                  Mint NFT
+                </Link>
                 <Link className={styles.heroCta} href="/stake">
                   Stake | Unstake
                 </Link>

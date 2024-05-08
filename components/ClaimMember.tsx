@@ -9,7 +9,7 @@ export function ClaimMember() {
     return (
         <Container maxW={"1200px"} paddingTop={"120"}>
             <Flex direction={"column"} alignItems={"center"} justifyContent={"center"} h={"50vh"}>
-                <Heading>Claim Your Pass to Start Earning</Heading>
+                <Heading>You must have a Mr. P. NutZ <br />NFT in order to stake</Heading>
                 <Box borderRadius={"8px"} overflow={"hidden"} my={10}>
                     <MediaRenderer
                         src={metadata?.image}
@@ -21,7 +21,8 @@ export function ClaimMember() {
                 <Web3Button
                     contractAddress={FARMER_ADDRESS}
                     action={(contract) => contract.erc1155.claim(0, 1)}
-                >Claim Community Pass</Web3Button>
+                >Mint Now</Web3Button>
+                <Heading>Cost 2M DezNutZ</Heading>
             </Flex>
         </Container>
     );
