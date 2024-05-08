@@ -32,11 +32,11 @@ export const StakedShares = (props: EquippedProps) => {
                             height="60%"
                             width="60%"
                         />
-                        <Text p={5}>Equipped: {ethers.utils.formatUnits(claimableRewards[0], 0)}</Text>
+                        <Text p={5}>Staked: {ethers.utils.formatUnits(claimableRewards[0], 0)}</Text>
                         <Web3Button
                             contractAddress={STAKING_ADDRESS}
                             action={(contract) => contract.call("withdraw", [props.tokenId, 1])}
-                        >Withdraw</Web3Button>
+                        >Unstake</Web3Button>
                     </Box>
                     <Box mt={5}>
                         <Text>Claimable $Earnings:</Text>

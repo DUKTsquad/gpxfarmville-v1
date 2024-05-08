@@ -42,6 +42,10 @@ const Home: NextPage = () => {
         </div>
         <h3>Status Feed:</h3>
         <StatusEvents />
+        <div className={styles.statusContainer}>
+        <h3>Status Feed:</h3>
+        <StatusEvents />
+        </div>
       </div>
     </main>
   );

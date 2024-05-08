@@ -11,9 +11,9 @@ export default function Buy() {
 
   return (
     <Container maxWidth="lg">
-      <h1>Buy Tools</h1>
-      <p>Browse tools listed for sell or action on the open marketplace. Exchanges are secured by smart contracts to ensure fair swaps. Tools must 
-        be equipped in order to earn rewards & stop earning when unequipped. You can equip your tools from the farm menu option.</p>
+      <h1>BUY on Exchange</h1>
+      <p>Browse DezNFTz listed for sell or action on the open marketplace. Exchanges are secured by smart contracts to ensure fair swaps. NFTs must 
+        be staked in order to earn rewards & stop earning when unstaked. You can stake & unstake your NFTs from the STAKE menu option Above.</p>
       <NFTGrid
         data={data}
         isLoading={isLoading}

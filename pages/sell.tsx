@@ -22,10 +22,10 @@ export default function Sell() {
 
   return (
     <Container maxWidth="lg">
-      <h1>Sell NFTs</h1>
+      <h1>SELL on Exchange</h1>
       {!selectedNft ? (
         <>
-          <p>Select which NFT you&rsquo;d like to sell below.</p>
+          <p>Select which NFT you&rsquo;d like to sell below. NFTs can be listed for a fixed price or auctioned.</p>
           <NFTGrid
             data={data}
             isLoading={isLoading}

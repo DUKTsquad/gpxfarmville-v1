@@ -30,7 +30,7 @@ const Home: NextPage = () => {
     return (
       <Container maxW={"1200px"}>
         <Flex direction={"column"} h={"100vh"} justifyContent={"center"} alignItems={"center"}>
-          <Heading my={"40px"}>Welcome to the Farmville</Heading>
+          <Heading my={"40px"}>Welcome to the DezNutZ</Heading>
           <ConnectWallet />
         </Flex>
       </Container>
@@ -59,8 +59,8 @@ const Home: NextPage = () => {
     <Container maxW={"1200px"} paddingTop={100}>
       <SimpleGrid columns={2} spacing={10}>
         <Card p={5}>
-          <Heading>Farmer Info</Heading>
-          <Text>Farmer</Text>
+          <Heading>Member Info</Heading>
+          <Text>Member</Text>
           <SimpleGrid columns={3} spacing={10}>
             <Box>
               {ownedFarmers?.map((nft) => (
@@ -92,7 +92,7 @@ const Home: NextPage = () => {
             </Box>
           </SimpleGrid>
           <Box>
-              <Text fontSize={"small"} fontWeight={"bold"}>$Seed Balance:</Text>
+              <Text fontSize={"small"} fontWeight={"bold"}>$DezNutZ Balance:</Text>
                 {rewardBalance && (
                     <p>{ethers.utils.formatUnits(rewardBalance, 18)}</p>
                   )}
@@ -100,9 +100,9 @@ const Home: NextPage = () => {
         </Card>
       </SimpleGrid>
       <Card p={5} my={10}>
-        <Heading mb={"30px"}>Unequiped Tools | Start Earning</Heading>
-        <Text>The amount of unequiped tools in your account available to use. This DOES NOT include tools currently in use. 
-          Tools must be put to use in order to earn $Seeds.</Text>
+        <Heading mb={"30px"}>Unstaked NFTs | Start Earning</Heading>
+        <Text>The amount of staked DezNFTs in your account available to use. This DOES NOT include NFTs currently staked. 
+          NFTs must be staked in order to earn $DezNutZ.</Text>
         <SimpleGrid columns={1} spacing={10}>
         <Skeleton isLoaded={!loadingOwnedTools}>
             <UnstakedShares
@@ -112,9 +112,9 @@ const Home: NextPage = () => {
         </SimpleGrid>
       </Card>
       <Card p={5} my={10}>
-        <Heading mb={"30px"}>Equipped Tools | Claim Rewards</Heading>
-        <Text>The amount of tools that are currently in use and earning rewards. This DOES NOT include your unequiped tools. 
-          You can claim your accured rewards or unequip your a tool.</Text>
+        <Heading mb={"30px"}>Staked NFTs | Claim Rewards</Heading>
+        <Text>The amount of DezNFTs that are currently in use and earning rewards. This DOES NOT include your unstaked NFTs. 
+          You can claim your accured rewards or unstake your NFTs.</Text>
         <SimpleGrid columns={3} spacing={10}>
             {equippedTools &&
               equippedTools [0].map((nft: BigNumber) => (

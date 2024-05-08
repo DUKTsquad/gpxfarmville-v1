@@ -31,7 +31,7 @@ export default function NFTComponent({ nft }: Props) {
             <Web3Button
                 contractAddress={TOOLS_ADDRESS}
                 action={(contract) => contract.erc1155.claim(nft.metadata.id, 1)}
-            >Buy Tools</Web3Button>
+            >Buy NFT</Web3Button>
         </Card>
     )
 };

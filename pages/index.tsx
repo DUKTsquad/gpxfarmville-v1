@@ -26,7 +26,7 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.heroAssetFrame}>
             <Image
-              src="/hero-asset1.png"
+              src="/hero-asset-1.png"
               width={860}
               height={540}
               alt="Hero asset, NFT marketplace"
@@ -38,31 +38,32 @@ const Home: NextPage = () => {
             <div className={styles.heroBody}>
               <h1 className={styles.heroTitle}>
                 <span className={styles.heroTitleGradient}>
-                  Build a farm business
+                  Stake DezNFTz
                 </span>
                 <br />
-                & earn daily rewards.
+                Earn Daily Rewards!
               </h1>
               <p className={styles.heroSubtitle}>
+                Buy NFTs with -
                 <Link
                   className={styles.link}
-                  href="/invest"
+                  href="https://app.uniswap.org/explore/tokens/base/0x79aac45c18a20a99a27dc4107e30d89331252d0c"
                 >
-                  Farmville
+                  DezNutZ
                 </Link>{" "}
-                gives you the tools you need to invest and build a successful farm.
-                Claim a farm, put your tools to work and start earning rewards <b>daily</b>, <i>not monthly</i>.
+                to stake your NFTs & Earn.
+                Stake DezNFTz, to put the PeaNutZ People to work for you. Earn <i>rewards</i> <b>daily</b>!
               </p>
 
               <div className={styles.heroCtaContainer}>
-                <Link className={styles.heroCta} href="/invest">
-                  Manage Farm
+                <Link className={styles.heroCta} href="/stake">
+                  Stake | Unstake
                 </Link>
                 <Link
                   className={styles.secondaryCta}
-                  href="/shop"
+                  href="https://app.uniswap.org/explore/tokens/base/0x79aac45c18a20a99a27dc4107e30d89331252d0c"
                 >
-                  Purchase Tools
+                  Buy DezNutZ
                 </Link>
               </div>
             </div>
