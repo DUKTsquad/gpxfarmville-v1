@@ -19,10 +19,10 @@ export default function Shop()  {
                 </Link>
             </Flex>
             <Heading mt={"40px"}>Mint DezNFTz</Heading>
-            <Text>Purchase NFTs, put DezNutZ to work for you and start earning rewards. You can Mint DezNFTz here directly <br />
+            <Text>Purchase NFTs to put DezNutZ to work for you and start earning rewards. You can Mint DezNFTz here directly <br />
             or buy and trade them on the exchange. Holders are eligible for special community rewards and air drops.<br /> DezNutZ are required to purchase NFTz...
                 <Link
-                    href="https://app.uniswap.org/explore/tokens/base/0x79aac45c18a20a99a27dc4107e30d89331252d0c"
+                    href="https://app.uniswap.org/explore/tokens/base/0x7c34c84347af3d06e0a6a6059a6a299fb16d2486"
                 >
                     <Button>Buy DezNutZ on DEX</Button>
                 </Link>
