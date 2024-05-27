@@ -26,11 +26,6 @@ export default function Shop()  {
                 >
                     <Button>Buy DezNutZ on DEX</Button>
                 </Link>
-                <Link
-                    href="https://app.uniswap.org/explore/tokens/base/0x7c34c84347af3d06e0a6a6059a6a299fb16d2486"
-                >
-                    <Button>Buy DezNutZ on DEX</Button>
-                </Link>
                 </Text>
             {!nfts ? (
                 <Flex h={"50vh"} justifyContent={"center"} alignItems={"center"}>
